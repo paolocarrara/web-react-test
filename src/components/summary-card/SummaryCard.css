@@ -1,0 +1,33 @@
+.summary-card {
+    background-color: #FFF;
+    padding: 25px 24px 12px 24px;
+    width: 345px;
+    height: 352px;
+    border-radius: 16px ;
+    box-shadow: 1px 1px 2px 0 rgb(154, 163, 188);
+}
+
+.summary-card .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary-card .header .title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #3B5CB8;
+    line-height: 47px;
+}
+
+.summary-card .investment .title {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.summary-card .investment .value {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #3B5CB8;
+    margin-top: 7px;
+}
