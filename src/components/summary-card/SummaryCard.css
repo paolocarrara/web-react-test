@@ -1,33 +1,104 @@
-.summary-card {
-    background-color: #FFF;
-    padding: 25px 24px 12px 24px;
-    width: 345px;
-    height: 352px;
-    border-radius: 16px ;
-    box-shadow: 1px 1px 2px 0 rgb(154, 163, 188);
-}
-
-.summary-card .header {
+/* Header */
+.summary-card .header .row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.summary-card .header .title {
+.summary-card .header .row.main .title {
     font-size: 1.5em;
     font-weight: bold;
     color: #3B5CB8;
-    line-height: 47px;
+    line-height: 36px;
 }
 
-.summary-card .investment .title {
+.summary-card .header .row.main button {
+    height: 24px;
+    width: 24px;
+    border: 0;
+    background-color: #FFF;
+    border-radius: 4px;
+    transition: background-color 0.1s ease;
+    color: #9AA3BC;
+}
+
+.summary-card .header .row.main button:hover {
+    cursor: pointer;
+    color: #606377
+}
+
+/* Body */
+.summary-card .body .row.investment .title {
     text-align: center;
     margin-top: 35px;
+    color: #606377;
 }
 
-.summary-card .investment .value {
+.summary-card .body .row.investment .value {
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
     color: #3B5CB8;
     margin-top: 7px;
+}
+
+.summary-card .body .row.summary {
+    margin-top: 32px;
+}
+
+.summary-card .body .row.summary .row {
+    display: flex;
+    justify-content: space-between;
+}
+.summary-card .body .row.summary .row:nth-of-type(n + 1) {
+    margin-top: 12px;
+}
+
+hr {
+    background-color: #9AA3BC;
+    height: 1px;
+    border: 0;
+    margin-top: 24px;
+}
+
+.summary-card .summary .row .title {
+    color: #606377;
+}
+
+.summary-card .summary .row .value {
+    color: #3B5CB8;
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+
+/* Footer */
+
+.summary-card .footer {
+    margin-top: 16px;
+}
+
+.summary-card .footer .row.actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.summary-card .footer .row.actions button {
+    padding: 6px 13px;
+    border-radius: 32px;
+    border: 1px solid #3B5CB8;
+    font-weight: bold;
+    font-size: 1em;
+    color: #3B5CB8;
+    background-color: #FFF;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 2px 0 rgb(154, 163, 188);
+    transition: background-color 0.1s ease;
+}
+
+.summary-card .footer .row.actions button:hover {
+    box-shadow: 0 0 4px 0 rgb(154, 163, 188);
+    cursor: pointer;
+    color: #FFF;
+    background-color: #3B5CB8;
+    transition: background-color 0.25s ease;
 }
