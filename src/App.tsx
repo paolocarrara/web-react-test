@@ -1,18 +1,36 @@
-import React from 'react';
+import React, {FunctionComponent} from 'react';
 import './App.css';
-import SummaryCard from "./components/summary-card/SummaryCard";
+import WealthSummaryQuery from "./api/queries/WealthSummaryQuery";
+import { useQuery } from "@apollo/client";
+import { WealthSummary } from "./models/WealthSummary";
+import SummaryList from "./components/summary-list/SummaryList";
+import {WithTranslation, withTranslation} from "react-i18next";
+import Loading from "./components/loading/Loading";
 
-function App() {
-  return (
-    <div className="App">
-      <SummaryCard
-          total={3200876}
-          profitability={2.76789}
-          gain={1833.23}
-          cdi={3.45678}
-      />
-    </div>
-  );
+interface IAppProps extends  WithTranslation {}
+
+const App: FunctionComponent<IAppProps> = (props) => {
+    const { t } = props
+    const { loading, error, data } = useQuery(WealthSummaryQuery);
+    let wealthSummaries: Array<WealthSummary> = [];
+
+    if (!loading && data && data.wealthSummary && data.wealthSummary) {
+        wealthSummaries = data.wealthSummary
+    }
+
+    return (
+        <div className='app'>
+            {loading ? (
+                <Loading />
+            ) : (
+                error ? (
+                    <div>{t('error')}</div>
+                ) : (
+                    <SummaryList summaries={wealthSummaries} />
+                )
+            )}
+        </div>
+    );
 }
 
-export default App;
+export default withTranslation('app')(App);

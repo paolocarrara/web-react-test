@@ -1,8 +1,9 @@
-.App {
+.app {
   text-align: center;
   background-color: #E8EBF6;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: calc(100vh - 64px);
+  padding: 32px;
 }

@@ -1,6 +1,18 @@
-# Getting Started with Create React App
+# Getting Started with Web React Test
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Starting the project
+
+To start the project first create the .env file and add the api key inside it following the .env.example file.
+
+After that run:
+#### `npm install`
+
+and then
+#### `npm start`
+
+The local NodeJs server will try to server the application in the host localhost at port 3000.
 
 ## Available Scripts
 

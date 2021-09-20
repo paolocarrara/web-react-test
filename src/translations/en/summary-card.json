@@ -1,0 +1,28 @@
+{
+  "header": {
+    "main": {
+      "title": "Your summary"
+    }
+  },
+  "body": {
+    "investment": {
+      "title": "Amount invested"
+    },
+    "summary": {
+      "profitability": {
+        "title": "Profitability/month"
+      },
+      "cdi": {
+        "title": "CDI"
+      },
+      "gain": {
+        "title": "Earning/month"
+      }
+    }
+  },
+  "footer": {
+    "actions": {
+      "seeMoreButtonText": "View more"
+    }
+  }
+}

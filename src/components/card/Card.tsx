@@ -1,14 +1,12 @@
-import { Component } from 'react';
+import {Component, FunctionComponent} from 'react';
 import './Card.css';
 
-class Card extends Component {
-    render () {
-        return (
-            <div className={'card'}>
-                {this.props.children}
-            </div>
-        )
-    }
+const Card: FunctionComponent = (props) => {
+    return (
+        <div className={'card'}>
+            {props.children}
+        </div>
+    )
 }
 
 export default Card

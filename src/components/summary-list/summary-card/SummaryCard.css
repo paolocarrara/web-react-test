@@ -35,11 +35,35 @@
 }
 
 .summary-card .body .row.investment .value {
-    text-align: center;
     font-size: 1.5em;
     font-weight: bold;
     color: #3B5CB8;
     margin-top: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.summary-card .body .row.investment .value button {
+    margin-left: 16px;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    border: none;
+    background-color: #FFF;
+    transition: background-color 0.1s ease;
+    color: #9AA3BC;
+}
+
+.summary-card .body .row.investment .value button:hover {
+    cursor: pointer;
+    color: #606377
+}
+
+.summary-card .body .row.investment .value.hide span {
+    background-color: #9AA3BC;
+    color: #9AA3BC;
+    border-radius: 4px;
 }
 
 .summary-card .body .row.summary {

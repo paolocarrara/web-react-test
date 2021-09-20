@@ -1,0 +1,28 @@
+{
+  "header": {
+    "main": {
+      "title": "Seu resumo"
+    }
+  },
+  "body": {
+    "investment": {
+      "title": "Valor investido"
+    },
+    "summary": {
+      "profitability": {
+        "title": "Rentabilidade/mês"
+      },
+      "cdi": {
+        "title": "CDI"
+      },
+      "gain": {
+        "title": "Ganho/mês"
+      }
+    }
+  },
+  "footer": {
+    "actions": {
+      "seeMoreButtonText": "Ver mais"
+    }
+  }
+}
