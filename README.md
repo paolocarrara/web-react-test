@@ -12,7 +12,7 @@ After that run:
 and then
 #### `npm start`
 
-The local NodeJs server will try to server the application in the host localhost at port 3000.
+The local NodeJs server will try to serve the application in the host localhost at port 3000.
 
 ## Available Scripts
 
